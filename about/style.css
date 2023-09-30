@@ -116,7 +116,7 @@ main h3{
 }
 
 footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
     text-align: center;
     background: #000;
