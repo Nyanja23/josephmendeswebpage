@@ -1,0 +1,126 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-image: radial-gradient(red,blue);
+    font-family: monospace;
+    font-size: 1.2rem;
+    line-height: clamp(4vh,1.4,5vh);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.background p{
+   text-indent: 20px;
+   text-align: justify;
+}
+.background .image{
+    margin-left: 20vw;
+}
+.background .image img{
+    width: 20vh;
+    height: auto;
+    border-radius: 50%;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .links{
+    list-style: none;
+    display: flex;
+    gap: 1.4rem;
+}
+@media screen and (max-width: 514px){
+    header{
+       display: grid;
+       gap: 0px;
+    }
+}
+header .links a{
+    text-decoration: none;
+}
+header .links a:any-link{
+    color: #fff;
+}
+header .links a:hover,
+header .links a:focus{
+    color: red;
+    text-decoration: underline;
+}
+header h1{
+    padding: 8px;
+    font-family: monospace,sans-serif;
+}
+main h3{
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    padding: 5px;
+}
+.hero > div img{
+    width: 40%;
+    height: auto;
+    border-radius: 15px;
+}
+.hero > h4{
+    margin-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.solitude,
+.music,
+.sports,
+.movies,
+.programming{
+    display: flow-root;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.solitude img,
+.music img,
+.sports img,
+.movies img,
+.programming img,
+.solitude img{
+    float: left;
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 765px){
+    .solitude p,
+    .music p,
+    .sports p,
+    .movies p,
+    .programming p,
+    .solitude p{
+    line-height: 5vh;
+    font-size: 1.5rem;
+}
+}
+@media screen and (max-width: 529px){
+    .hero > div img{
+        width: 50%;
+        height: 100%;
+    }
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    background: #000;
+    height: 50px;
+}
+
+
