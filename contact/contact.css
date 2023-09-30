@@ -59,4 +59,9 @@ nav ul a:active{
 }
 .home:any-link{
     color: blue;
+}@media screen and (max-width: 576px){
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
 }
