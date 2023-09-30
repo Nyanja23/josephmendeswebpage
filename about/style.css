@@ -25,7 +25,7 @@ html{
     border-radius: 50%;
 }
 header{
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
     background-color: #000;
