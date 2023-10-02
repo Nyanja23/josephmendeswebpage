@@ -42,12 +42,6 @@ header .links{
     display: flex;
     gap: 1.4rem;
 }
-/*@media screen and (max-width: 514px){
-    header{
-       display: grid;
-       gap: 0px;
-    }
-}*/
 @media screen and (max-width: 462px){
     .hero .offscreen{
         display: none;
@@ -72,6 +66,9 @@ main h3{
     text-align: center;
     border-bottom: 1px solid #fff;
     padding: 5px;
+}
+.hero {
+    margin-bottom: 20vh;
 }
 .hero > div img{
     width: 40%;
@@ -124,7 +121,9 @@ main h3{
 
 footer {
     position: fixed;
+    right: 0;
     bottom: 0;
+    width: 100%;
     text-align: center;
     background: #000;
     height: 50px;
