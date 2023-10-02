@@ -111,13 +111,16 @@ main h3{
     line-height: 5vh;
     font-size: 1.5rem;
 }
-@media screen and (max-width: 514px){
+@media screen and (max-width: 576px){
     header{
        display: grid;
        gap: 0px;
     }
     .links{
         flex-direction: column;
+    }
+      header h1{
+        margin-left: 20vw;
     }
 }
 }
