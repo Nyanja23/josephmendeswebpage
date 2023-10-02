@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
     color: #fff;
     background-image: radial-gradient(red,blue);
-    font-family: sans-serif,serif;
+    font-family: sans-serif;
     font-size: 1.2rem;
     line-height: clamp(4vh,1.4,5vh);
 }
@@ -14,10 +14,9 @@ html{
 
 .background p{
    text-indent: 20px;
-   text-align: justify;
 }
 .background .image{
-    margin-left: 20vw;
+    margin-left: 10vw;
 }
 .background .image img{
     width: 20vh;
@@ -25,27 +24,46 @@ html{
     border-radius: 50%;
 }
 header{
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
+    position: static;
+    /* top: 0; */
+    z-index: 100;
     background-color: #000;
     text-align: center;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-header .links{
-    list-style: none;
-    display: flex;
-    gap: 1.4rem;
+    width: 100%;
+    overflow: hidden;
 }
 @media screen and (max-width: 462px){
     .hero .offscreen{
         display: none;
     }
+}
+/* @media screen and (max-width: 514px){
+    header{
+       display: grid;
+       gap: 0px;
+    }
+} */
+header .links{
+    list-style: none;
+    display: flex;
+    gap: 1.4rem;
+}
+@media screen and (max-width: 576px){
+    header{
+       display: grid;
+       gap: 0px;
+    }
+    .links{
+        flex-direction: column;
+    }
+    header h1{
+        margin-left: 20vw;
+    }
+
 }
 header .links a{
     text-decoration: none;
@@ -67,9 +85,6 @@ main h3{
     border-bottom: 1px solid #fff;
     padding: 5px;
 }
-.hero {
-    margin-bottom: 20vh;
-}
 .hero > div img{
     width: 40%;
     height: auto;
@@ -78,6 +93,9 @@ main h3{
 .hero > h4{
     margin-left: 10%;
     font-family: Arial, Helvetica, sans-serif;
+}
+.hero{
+    margin-bottom: 20vh;
 }
 .solitude,
 .music,
@@ -111,18 +129,6 @@ main h3{
     line-height: 5vh;
     font-size: 1.5rem;
 }
-@media screen and (max-width: 576px){
-    header{
-       display: grid;
-       gap: 0px;
-    }
-    .links{
-        flex-direction: column;
-    }
-      header h1{
-        margin-left: 20vw;
-    }
-}
 }
 @media screen and (max-width: 529px){
     .hero > div img{
@@ -133,12 +139,16 @@ main h3{
 
 footer {
     position: fixed;
-    right: 0;
     bottom: 0;
+    right: 0;
+    /* top: 20px; */
     width: 100%;
     text-align: center;
     background: #000;
     height: 50px;
 }
+
+
+
 
 
