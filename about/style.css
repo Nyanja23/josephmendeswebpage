@@ -111,6 +111,15 @@ main h3{
     line-height: 5vh;
     font-size: 1.5rem;
 }
+@media screen and (max-width: 514px){
+    header{
+       display: grid;
+       gap: 0px;
+    }
+    .links{
+        flex-direction: column;
+    }
+}
 }
 @media screen and (max-width: 529px){
     .hero > div img{
